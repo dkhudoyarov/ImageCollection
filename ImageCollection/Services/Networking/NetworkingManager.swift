@@ -15,7 +15,7 @@ final class NetworkingManager: Networking {
             
     private let networkDataFetcher: DataFetcherProtocol = NetworkDataFetcher()
         
-    func fetchData(from url: String,completion: @escaping (Result<Response, Error>) -> Void) {
+    func fetchData(from url: String, completion: @escaping (Result<Response, Error>) -> Void) {
         networkDataFetcher.fetchGenericJSONData(fromUrl: url, completion: completion)
     }
 }
